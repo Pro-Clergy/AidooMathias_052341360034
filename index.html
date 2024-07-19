@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clergy's cuisine</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul id="list" class="show">
+        <li><a href="#">Home</a></li>
+        <li><a href="#menuing">Menu</a></li>
+        <li><a href="#abouting">About Us</a></li>
+        <li><a href="#contacting">Contact Us</a></li>
+      </ul>
+    </nav>
+    
+    
+      
+  </header>
+
+  <main>
+    <section class="hero">
+      <marquee  direction="up"
+      scrollamount="1"
+      behavior="2s" >
+      <img style="width: 100px;" src="./images/1.jpg" alt="Restaurant Exterior">
+      <p>Discover our delicious cuisine and warm hospitality.</p>
+      </marquee>
+    </section>
+
+    <section class="menu">
+      <h2 id="menuing">Our Menu</h2>
+      <div class="menu-items">
+        <!-- Existing menu items -->
+        <div class="menu-item">
+          <img src="./images/Chicken wings.jpg" alt="Dish 1">
+          <h3>Dish 1</h3>
+          <p>Chicken Wings</p>
+          <p>Price:$300.00</p>
+        </div>
+        <div class="menu-item">
+          <img src="./images/Tacos.jpg" alt="Dish 2">
+          <h3>Dish 2</h3>
+          <p>Tacos</p>
+          <p>Price: $250.00</p>
+        </div>
+        <div class="menu-item">
+          <img src="./images/burrito1.jpg" alt="Dish 3">
+          <h3>Dish 3</h3>
+          <p>Burrito</p>
+          <p>Price: $200.00</p>
+        </div>
+        <!-- Add the new menu items here -->
+        <div class="menu-item">
+          <img src="./images/Quesadilla.jpg" alt="Dish 4">
+          <h3>Dish 4</h3>
+          <p>Quesadilla</p>
+          <p>Price: $180.00</p>
+        </div>
+        <div class="menu-item">
+          <img src="./images/Sushi.jpg" alt="Dish 5">
+          <h3>Dish 5</h3>
+          <p>Sushi</p>
+          <p>Price: $220.00</p>
+        </div>
+        <div class="menu-item">
+          <img src="./images/Naan.jpg" alt="Dish 6">
+          <h3>Dish 6</h3>
+          <p>Naan</p>
+          <p>Price: $150.00</p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="about">
+      <h2 id="abouting">About Us</h2>
+      <img style="width: 120px"; src="./images/2.jpg" alt="Restaurant Interior">
+      <p id="para">Welcome to The Clergy's cuisine, where we embark on a culinary journey through the vibrant flavors of India. Established in 2015, our restaurant has become a beloved destination for those seeking an authentic and immersive dining experience.
+        Our story began with a passion for sharing the rich cultural heritage and diverse cuisine of India. Inspired by the ancient trade routes that connected the East and the West, we set out to create a space where guests could explore the depth and complexity of Indian flavors.</p>
+    </section>
+
+    <section class="contact">
+      <h2 id="contacting">Contact Us</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 CLERGY'S CUISINE. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js">
+      document.addEventListener("DOMContentLoaded", function() {
+        var toggleMenu = document.querySelector("#toggle-menu");
+        var list = document.querySelector("#list");
+    
+        toggleMenu.addEventListener("click", function() {
+          list.classList.toggle("show");
+        });
+      });
+    </script>
+</body>
+</html>
